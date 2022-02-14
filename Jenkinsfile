@@ -1,5 +1,7 @@
 pipeline {
-    agent none
+    agent node {
+        customWorkspace '/learn'
+    }
     stages {
         stage('build') {
             steps {
